@@ -1,0 +1,453 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    /* padding:0; */
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+
+}
+.main{
+        display: flex;
+        /* height: 100vh; */
+        /* padding: 0.35rem; */
+        
+}
+
+.sidebar{
+    background-color: #121212;
+    width: 340px;
+    border-radius: 1rem;
+    margin:0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1; 
+    height: 86vh;
+    border-radius: 1.5rem;
+    /* overflow: auto; */
+    overflow: auto;
+    margin:0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    
+}
+.music-player {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    left: 0; /* Ensures the player stretches from the leftmost edge */
+    right: 0; /* Ensures the player stretches to the rightmost edge */
+    z-index: 1000; /* Ensures the player is on top of other elements */
+    display: flex;
+    justify-content: space-between; /* Aligns content evenly across the width */
+    align-items: center;
+    padding: 0 1rem; /* Adds some padding to the sides */
+}
+
+a{
+    background-color: #121212;
+    text-decoration: none;
+    color:white;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #121212;  */
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    margin-bottom:0.5rem;
+}
+.nav-option{
+    background-color: #121212;
+    line-height:2.5rem;
+    opacity: 0.75;
+    padding: 0.5rem 0.75rem;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    text-decoration: none;
+    background-color: #121212;
+   
+}
+
+.nav-option a{
+    /* background-color: #121212; */
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: #121212;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%; 
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    /* background-color: #121212; */
+}
+
+.options{
+    margin:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+   
+}
+
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #121212;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+    background-color: #121212;
+}
+
+.icons i{
+    background-color: #121212;
+    opacity: 0.7;
+    margin-right: 1rem;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.box{
+    background-color: #232323;
+    border-radius: 0.75rem;
+    height: 8rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    background-color: #232323;
+    font-weight: 500;
+}
+
+.box-p2{
+    background-color: #232323;
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+
+.badge{
+    background-color: #fff;
+    border:none;
+    overflow:auto;
+    color:black;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height:2rem;
+    width: fit-content;
+}
+.lib-box{
+    background-color: #121212;
+}
+.nav{
+    background-color: #121212;
+
+}
+
+.library{
+    margin-bottom: 2rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Change the body's background color */
+}
+html {
+    background-color: #121212;
+}
+.main {
+    margin: 0;
+    padding: 0.5rem; /* Adjust as needed */
+}
+* {
+    background-color: inherit; /* or remove this property */
+ }
+.sticky-nav{
+    position: sticky;
+    display: flex;
+    top:0;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-icons{
+    margin: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+   
+}
+.nav-item{
+    margin-left: 1rem;
+    padding-right: 1rem ;
+}
+.dark-badge{
+    background-color: #121212;
+    color:white;
+
+}
+
+.user{
+    padding-right:0.75rem;
+    padding-left: 0.75rem;
+}
+
+.yo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .hide{
+        display: none;
+    }
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    
+}
+
+
+.card{
+    width: 150px ;
+    border-radius: 0.5rem;
+    background-color: #232323;
+    padding: 1rem;
+    
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 500;
+    
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height:30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 25%;
+    /* padding: 5px; */
+    margin-top: 3px;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 1.5px;
+}
+
+.left img{
+    width: 54px;
+    height: 53px;
+    position: relative;
+    bottom: 4px;
+
+}
+
+.right{
+    width: 25%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 12px;
+    /* align-content: space-around; */
+} 
+
+.line-end{
+    gap:2px;
+    width: 65px;
+    height:5px;
+    border-radius: 1%;
+    background-color: #fff;
+    border-top: 1px solid white;
+    opacity: 0.4;
+    &:hover{
+        background-color: greenyellow;
+    }
+}
+
+.middle{
+    width: 50%;
+}
+
+.middle img{
+    text-align: center;
+    height: 1rem;
+    width: 1rem; 
+    padding: 15px;
+}
+
+.player-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    bottom:10px;
+}
+
+.player-icon .controllermain{
+    height: 1.7rem;
+    width: 1.7rem;
+
+}
+
+.verymain{
+    position:relative;
+    text-align: center;
+    bottom:28px;
+}
+
+.progress-bar{
+    width: 65%;
+    /* position: relative; */
+    /* bottom: 5px; */
+}
+.vol{
+    width: 18%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.vol::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.20rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.30rem;
+}
+
+.vol::-webkit-slider-thumb{
+    appearance: none;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #1ea14e;
+    cursor: pointer;
+    scrollbar-color: #1bd760;
+}
+
+
+
+/* .progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #1ea14e;
+    cursor: pointer;
+     scrollbar-color: #1bd760;
+
+} */
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #1bd760;
+    cursor: pointer;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-left: 10px ;
+    margin-left: 6px ;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.dataicon{
+    display: flex;
+    column-gap: 10px;
+    /* flex-direction: row;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    padding-left: 10px;
+    justify-content: space-between; */
+}
+
+.singer{
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.song-name{
+    position: relative;
+    bottom: 3px;
+}
+
+input[type="range"]{
+    appearance: none;
+    height: 0.2rem;
+    border-radius: 100px;
+    
+}
+
+
+
+
